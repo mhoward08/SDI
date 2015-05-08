@@ -8,17 +8,20 @@
 // This is a single-line comment
 
 // These are my variables
-var myHomeAddress   = "123 Elm Street";
-var milesToStore    = 8.5;
-var construction;
-var myFavoriteStore = "Publix Supermarket";
+var myHouse = "123 Field St";
+var myBedroom = "my bed";
+var traffic = "traffic"
+var milesToSchool = " 1.5 miles";
 
 // adding my confirm
 // confirm();
-construction = confirm("Is there construction? Click OK for yes, Cancel for no.");
+construction = confirm("Is there traffic? Click OK for yes, Cancel for no.");
+
+var stuff = prompt("what");
 
 // my outputs
-console.log("I Live at " + myHomeAddress + "."); // this is my first output
-console.log("I shop at " + myFavoriteStore + ".");
-console.log("It's only " + milesToStore + " miles to the store.");
-console.log("It's " + construction + " that there is construction enroute.");
+console.log("I Live at " + myHouse + "."); // this is my first output
+console.log("I Sleep in " + myBedroom + ".");
+console.log("There is " + traffic + ".");
+console.log("It's only" + milesToSchool + " from Full Sail University. ");
+console.log("stuff");
