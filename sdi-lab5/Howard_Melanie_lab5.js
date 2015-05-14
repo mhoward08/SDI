@@ -22,48 +22,48 @@ var sumOfOperations;
 //    return sumOfOperations;
 ////}
 
-function multiplication(multi1, multi2) {
-    // multiplication
+//function multiplication(multi1, multi2) {
+//    // multiplication
+//
+//    sumOfOperations = (multi1 * multi2);
+//    return sumOfOperations;
+//}
 
-    sumOfOperations = (multi1 * multi2);
+function division(div1, div2) {
+    // divide
+
+    sumOfOperations = (div1 / div2);
     return sumOfOperations;
 }
 
-////function division(div1, div2) {
-////    // divide
+////// main codes
 ////
-////    sumOfOperations = (div1 / div2);
-////    return sumOfOperations;
-////}
-//
-//// main codes
-//
-////if(op === "+"){
-////    returnCatch = addition(num1, num2);
+//////if(op === "+"){
+//////    returnCatch = addition(num1, num2);
+//////    console.log("hey the number is " + returnCatch + ".");
+////
+////} else if(op === "-"){
+////    returnCatch = subtract(num1, num2);
 ////    console.log("hey the number is " + returnCatch + ".");
-//
-//} else if(op === "-"){
-//    returnCatch = subtract(num1, num2);
-//    console.log("hey the number is " + returnCatch + ".");
-////
-} else if(op === "*"){
-    returnCatch = multiplication(num1, num2);
-    console.log("hey the number is " + returnCatch + ".");
+//////
+////} else if(op === "*"){
+////    returnCatch = multiplication(num1, num2);
+////    console.log("hey the number is " + returnCatch + ".");
 
-////} else if(op === "/"){
-////    //returnCatch = division(num1, num2);
-////    if(num1 === 0 || num2 === 0){
-////    console.log("Division can't be done. ");
-////    } else if ((num1 > 0) && (num2 > 0)) {
-////        //(num1 > 0 && num2 > 0);
-////        returnCatch = division(num1, num2);
-////        console.log("hey the number is " + returnCatch + ".");
-////    }else{
-////        console.log("The division can't be done.");
-////    }
-////}else{
-////    console.log("That operation is not possible, try again!");
-////}
+} else if(op === "/"){
+    //returnCatch = division(num1, num2);
+    if(num1 === 0 || num2 === 0){
+    console.log("Division can't be done. ");
+    } else if ((num1 > 0) && (num2 > 0)) {
+        //(num1 > 0 && num2 > 0);
+        returnCatch = division(num1, num2);
+        console.log("hey the number is " + returnCatch + ".");
+    }else{
+        console.log("The division can't be done.");
+    }
+}else{
+    console.log("That operation is not possible, try again!");
+}
 
 
 
