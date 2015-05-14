@@ -7,20 +7,20 @@ var op = prompt("what kind of math?");
 var returnCatch;
 var sumOfOperations;
 
-// functions
-function addition(add1, add2) {
-    // addition
+//// functions
+////function addition(add1, add2) {
+////    // addition
+////
+////     sumOfOperations = (add1 + add2);
+////    return sumOfOperations;
+////}
 
-     sumOfOperations = (add1 + add2);
+function subtract(sub1, sub2) {
+    // subtract
+
+    sumOfOperations = (sub1 - sub2);
     return sumOfOperations;
 }
-
-//function subtract(sub1, sub2) {
-//    // subtract
-//
-//    sumOfOperations = (sub1 - sub2);
-//    return sumOfOperations;
-//}
 //
 //function multiplication(multi1, multi2) {
 //    // multiplication
@@ -38,13 +38,13 @@ function addition(add1, add2) {
 
 // main codes
 
-if(op === "+"){
-    returnCatch = addition(num1, num2);
-    console.log("hey the number is " + returnCatch + ".");
-
-//} else if(op === "-"){
-//    returnCatch = subtract(num1, num2);
+//if(op === "+"){
+//    returnCatch = addition(num1, num2);
 //    console.log("hey the number is " + returnCatch + ".");
+
+} else if(op === "-"){
+    returnCatch = subtract(num1, num2);
+    console.log("hey the number is " + returnCatch + ".");
 //
 //} else if(op === "*"){
 //    returnCatch = multiplication(num1, num2);
