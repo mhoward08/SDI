@@ -54,7 +54,7 @@ if(op === "+"){
     //returnCatch = division(num1, num2);
     if(num1 === 0 || num2 === 0){
     console.log("Division can't be done. ");
-    } else if ((num1 > 0) && (num2 > 0)) {
+    } else if ((num2 > 0)) {
         //(num1 > 0 && num2 > 0);
         returnCatch = division(num1, num2);
         console.log("hey the number is " + returnCatch + ".");
