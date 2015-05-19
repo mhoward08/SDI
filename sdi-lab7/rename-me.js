@@ -21,7 +21,7 @@ var returnedArray = [];
      var storeVarible;
      for (var x = 0; x < argArray.length; x++){
 
-
+// for loops
 
          for (var i = 0; i < argArray.length; i++) {
              if (argArray [i] > argArray [i + 1]) {
@@ -34,6 +34,8 @@ var returnedArray = [];
              }
          }
      }
+
+     // returns
 return argArray;
 
  }
@@ -44,17 +46,19 @@ return argArray;
 for (var z = 0; z < 3; z++) {
     if (z === 0) {
         returnedArray = compare (numberArray1);
-        console.log("Number 1 is right! " + returnedArray);
+
     } else if (z === 1) {
         returnedArray = compare (numberArray2);
-        console.log("Number 2 is right! " + returnedArray);
+
 
     } else if (z === 2) {
         returnedArray = compare (numberArray3);
-        console.log("Number 3 is right! " + returnedArray);
+
 
 
     }
+
+    console.log("This is the sorted array! " + returnedArray);
 }
 
 
