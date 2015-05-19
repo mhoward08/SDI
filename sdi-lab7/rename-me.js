@@ -46,6 +46,19 @@ compare(numberArray1);
 compare(numberArray2);
 compare(numberArray3);
 
+for (var z = 0; z < 3; z++) {
+    if (z === 0) {
+        returnedArray = compare (numberArray1);
+        console.log("Number 1 is right!" + returnedArray);
+    } else if (z === 1) {
+        returnedArray = compare (numberArray2);
+        console.log("Number 2 is right!" + returnedArray);
+
+    } else if (z === 2) {
+
+
+    }
+}
 
 
 
