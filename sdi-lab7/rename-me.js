@@ -12,3 +12,24 @@ var numberArray2 = [25, 100, 4, 22, 16, 105, 2, 7];
 var numberArray3 = [2, 3, 4, 1, 10, 27, 32, 51, 6, 100, 8, 42];
 var returnedArray = [];
 
+
+// function
+
+function averageArray(argArray, numOfArrays) {
+
+    // local variables
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+// main code
+
