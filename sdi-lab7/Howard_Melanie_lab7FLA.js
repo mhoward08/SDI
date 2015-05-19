@@ -18,7 +18,7 @@ var returnedArray = [];
  function compare(argArray) {
 
      // local variables
-     var storeVarible;
+     var storeVariable;
      for (var x = 0; x < argArray.length; x++){
 
 // for loops
@@ -26,11 +26,11 @@ var returnedArray = [];
          for (var i = 0; i < argArray.length; i++) {
              if (argArray [i] > argArray [i + 1]) {
 
-                 storeVarible = argArray [i];
+                 storeVariable = argArray [i];
 
                  argArray [i] = argArray[i + 1];
 
-                 argArray [i + 1] = storeVarible;
+                 argArray [i + 1] = storeVariable;
              }
          }
      }
