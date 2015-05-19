@@ -17,29 +17,30 @@ var returnedArray = [];
 
  function compare(argArray) {
 
-    // local variables
-    var numericStringArray = [];
+     // local variables
+     var storeVarible;
+     for (var x = 0; x < argArray.length; x++){
 
-     if (numberArray1 > numberArray2) {
 
 
-     } else {
+         for (var i = 0; i < argArray.length; i++) {
+             if (argArray [i] > argArray [i + 1]) {
 
-         returnedArray 0;
+                 storeVarible = argArray [i];
 
+                 argArray [i] = argArray[i + 1];
+
+                 argArray [i + 1] = storeVarible;
+             }
+         }
      }
+return argArray;
 
-     for (var i = 0; i < ; i++) {
-         console.log()
-     }
-
-   }
-
-
-
-
+ }
 
 // main code
+returnedArray = compare(numberArray1);
+console.log("That is correct." + returnedArray);
 
 compare(numberArray1);
 compare(numberArray2);
