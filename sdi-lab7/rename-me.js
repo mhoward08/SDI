@@ -15,21 +15,38 @@ var returnedArray = [];
 
 // function
 
-function averageArray(argArray, numOfArrays) {
+ function compare(argArray) {
 
     // local variables
-    
+    var numericStringArray = [];
+
+     if (numberArray1 > numberArray2) {
 
 
-}
+     } else {
 
+         returnedArray 0;
 
+     }
 
+     for (var i = 0; i < ; i++) {
+         console.log()
+     }
 
+   }
 
 
 
 
 
 // main code
+
+compare(numberArray1);
+compare(numberArray2);
+compare(numberArray3);
+
+
+
+
+
 
