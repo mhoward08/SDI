@@ -12,53 +12,53 @@
  */
 
 // global variable
-var ourString;
-var returnedString;
+//var ourString;
+//var returnedString;
+//
+//// functions
+//function initialCaps(argString) {
+//
+//    // local variables
+//    var newString;
+//    var strArray;
+//    var currentWord;
+//    var newWord = "";
+//
+//    //uppercase everything
+//    newString = argString.toUpperCase();
+//
+//    strArray = newString.split(" ");
+//
+//    for (var each in strArray) {
+//
+//        currentWord = strArray [each];
+//
+//        for (var char in strArray[each]) {
+//
+//
+//            if (char != 0) {
+//
+//              currentChar = currentWord[char].toLowerCase();
+//              newWord = newWord + currentChar;
 
-// functions
-function initialCaps(argString) {
-
-    // local variables
-    var newString;
-    var strArray;
-    var currentWord;
-    var newWord = "";
-
-    //uppercase everything
-    newString = argString.toUpperCase();
-
-    strArray = newString.split(" ");
-
-    for (var each in strArray) {
-
-        currentWord = strArray [each];
-
-        for (var char in strArray[each]) {
-
-
-            if (char != 0) {
-
-              currentChar = currentWord[char].toLowerCase();
-              newWord = newWord + currentChar;
-
-
-            } else {
-
-                newWord = newWord + currentWord[0];
-            }
-
-        }
-
-        newWord = newWord + " ";
-    }
-    return newWord;
-}
-
-ourString = prompt("Enter a string to initial cap: ", "i am batman");
-
-returnedString = initialCaps(ourString);
-
-console.log(returnedString);
+//
+//            } else {
+//
+//                newWord = newWord + currentWord[0];
+//            }
+//
+//        }
+//
+//        newWord = newWord + " ";
+//    }
+//    return newWord;
+//}
+//
+//ourString = prompt("Enter a string to initial cap: ", "i am batman");
+//
+//returnedString = initialCaps(ourString);
+//
+//console.log(returnedString);
 
 
 
