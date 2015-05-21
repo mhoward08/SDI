@@ -16,5 +16,12 @@ var myEmail = "melanieh2008@fullsail.edu";
 
 function charAtFunction(emailArg) {
 
+    // local variables
+
+    var atSymbol = emailArg.charAt(12);
+    return atSymbol;
+
+    console.log(charAtFunction(myEmail));
+
 
 }
