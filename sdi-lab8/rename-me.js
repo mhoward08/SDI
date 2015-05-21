@@ -10,18 +10,41 @@ Lab 8 Working With Strings
 
 // global variable
 
-var myEmail = "melanieh2008@fullsail.edu";
+var myEmail = prompt("Please enter your email: ");
+returnedString;
 
-// function
+// functions
 
-function charAtFunction(emailArg) {
+function strEmail(whatIsIt) {
 
     // local variables
 
-    var atSymbol = emailArg.charAt(12);
-    return atSymbol;
+    var atSymbol = whatIsIt.indexOf("@");
+    var theSpace = whatIsIt.indexOf(" ");
+    var theDot = whatIsIt.lastIndexOf(".");
+    var correct;
+    var atSymbolChecking = whatIsIt.lastIndexOf("@");
 
-    console.log(charAtFunction(myEmail));
 
+    // conditionals
+
+    if((atSymbol >= 0 ) && (theSpace === -1) && (theDot >= 0) && (theDot > atSymbol) && (atSymbolChecking == atSymbol)) {
+    correct = " That is a valid email."
+
+    } else {
+
+        correct = " That is invalid."
+
+    }
+
+    // return
+
+    return correct;
 
 }
+
+// main code
+
+var returnedString = strEmail(myEmail);
+console.log(myEmail + returnedString);
+
