@@ -53,27 +53,43 @@ Lab 8 Working With Strings
 
 //global variable
 
-var firstString = "cookies, crackers, pretzels, chips";
-var secondString = "_";
-var thirdString = ",";
+var firstString = "cookies,crackers,pretzels,chips";
+var secondString = ",";
+var thirdString = "_";
 var returnedString;
 
 // function
 
-function Snacks(firstArg, secondArg, thirdArg){
+function snacks(firstArg, secondArg, thirdArg){
 
     // local variables
 
     var newString;
     var newSnack = "";
 
-    
+    newString = firstArg.split(secondArg);
 
+    // loops
 
+    for(var x = 0; x < newString.length; x++){
+
+        if(x === newString.length -1) {
+
+            newSnack = newSnack + newString[x];
+        } else {
+
+            newSnack = newSnack + newString[x] + thirdArg;
+
+        }
+    }
+
+    return newSnack;
 
 }
 
-
+// main code
+returnedString = snacks(firstString, secondString, thirdString);
+console.log("When I have house parties I buy " + returnedString + ".");
 
 
 
