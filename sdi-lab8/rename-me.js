@@ -58,7 +58,20 @@ var secondString = "_";
 var thirdString = ",";
 var returnedString;
 
+// function
 
+function Snacks(firstArg, secondArg, thirdArg){
+
+    // local variables
+
+    var newString;
+    var newSnack = "";
+
+    
+
+
+
+}
 
 
 
