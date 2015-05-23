@@ -10,8 +10,10 @@ Lab 9 - Number and Date Objects
 
 var num = 2.44494837587389475983;
 var returnedNum;
-var newNum = (prompt("Enter a number please:"));
 var returnedVariable;
+var returnedDates;
+
+
 
 
 
@@ -25,29 +27,59 @@ function numberMethods(argPrompt, argPrompt2) {
 
     return num1;
 
-
-
-
-
-
 }
 
-function numString(argPrompt) {
+// problem 2 function
+
+function numString(argPrompt)
+{
 
     var results;
 
 
-    if (isNaN(argPrompt)) {
+    if (isNaN(argPrompt))
+    {
          results = ("This is not a number.")
 
-    } else {
-      results = parseInt(argPrompt);
+    } else
+
+    {
+      results = parseFloat(argPrompt);
 
 
     }
 
     return results;
 }
+
+// problem 3 function
+
+function dateDifferences(dateOne, dateTwo)
+{
+
+    var date1 = new Date(dateOne);
+    var date2 = new Date(dateTwo);
+
+   var diffOfDates = date1 - date2;
+
+
+    if (hoursOrDays === "hours")
+    {
+
+        diffOfDates = Math.abs(diffOfDates / 1000 / 60 / 60);
+    }
+
+    else if ((hoursOrDays === "days"))
+    {
+
+        diffOfDates = Math.abs(diffOfDates / 1000 / 60 / 60 / 24);
+    }
+    return diffOfDates;
+
+
+}
+
+
 
 
 
@@ -59,8 +91,19 @@ function numString(argPrompt) {
 
 // main code problem 2
 
-var returnedVariable = numString(newNum);
-console.log(returnedVariable);
+//var returnedVariable = numString(newNum);
+//console.log(returnedVariable);
+//var newNum = (prompt("Enter a number please:"));
+
+// main code problem 3
+
+var dateOne = prompt("Please enter the correct date: ", "1/5/2015");
+var dateTwo = prompt("What are the two dates?", "1/13/1976")
+var hoursOrDays = prompt("Please enter hours or days: ","hours");
+returnedDates = dateDifferences(dateOne,dateTwo);
+console.log(returnedDates);
+
+
 
 
 
