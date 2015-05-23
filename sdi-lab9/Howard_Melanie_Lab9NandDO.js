@@ -11,6 +11,7 @@ Lab 9 - Number and Date Objects
 var num = 2.44494837587389475983;
 var returnedNum;
 var returnedVariable;
+
 var returnedDates;
 
 
@@ -91,17 +92,18 @@ function dateDifferences(dateOne, dateTwo)
 
 // main code problem 2
 
-//var returnedVariable = numString(newNum);
-//console.log(returnedVariable);
-//var newNum = (prompt("Enter a number please:"));
+var newNum = (prompt("Enter a number please:"));
+var returnedVariable = numString(newNum);
+console.log(returnedVariable);
+
 
 // main code problem 3
 
-var dateOne = prompt("Please enter the correct date: ", "1/5/2015");
-var dateTwo = prompt("What are the two dates?", "1/13/1976")
-var hoursOrDays = prompt("Please enter hours or days: ","hours");
-returnedDates = dateDifferences(dateOne,dateTwo);
-console.log(returnedDates);
+//var dateOne = prompt("Please enter the correct date: ", "1/5/2015");
+//var dateTwo = prompt("What are the two dates?", "1/13/1976")
+//var hoursOrDays = prompt("Please enter hours or days: ","hours");
+//returnedDates = dateDifferences(dateOne,dateTwo);
+//console.log(returnedDates);
 
 
 
