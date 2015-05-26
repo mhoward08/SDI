@@ -10,6 +10,7 @@ Lab Ten: Problem - Solving
 // global variable
 var returnedLottery;
 var userChoice;
+var array = [];
 
 // function
 function lotteryNumbers(lotteryType)
@@ -17,50 +18,64 @@ function lotteryNumbers(lotteryType)
 {
 
     // local variables
-    var powerBall;
+    var powerBall = [];
     //var randomNumbers;
     //var floridaBall;
+    var finalNumber = [];
     var a;
     var b;
 
     // if statement
     if (lotteryType == 1)
     {
-        for(i = 0; i < 5; i++)
+        for(var i = 0; i < 5; i++)
 
         {
 
             // powerBall 1-59
 
-            powerBall = Math.floor((Math.random() * 59 + 1));
-            console.log("Powerball is " + powerBall);
+            array[i] = Math.floor((Math.random() * 59 + 1));
+            //console.log("Power ball is " + array);
+
+
+            finalNumber[i] = array[i];
 
         }
 
         // random number
-        powerBall = Math.floor((Math.random() * 35 + 1));
-        console.log("The random number is " + powerBall);
+        array[i] = Math.floor((Math.random() * 35 + 1));
+        //console.log("The random number is " + array);
 
+
+        finalNumber[i] = array[i];
 
     }
     // floridaBall 1-53
 
     else if(lotteryType == 2)
 
-    for(i = 0; i < 5; i++)
+    for(i = 0; i < 6; i++)
 
     {
-        powerBall = Math.floor((Math.random() * 53 + 1));
-        console.log("Florida is " + powerBall);
+        powerBall[i] = Math.floor((Math.random() * 53 + 1));
+        //console.log("Florida is " + powerBall);
+        finalNumber[i] = powerBall[i];
     }
-
+    //console.log(finalNumber)
     // return
-    return powerBall;
+    return finalNumber;
 }
 
 
 
 // main code
 userChoice = prompt("Type 1 for Power Ball or 2 for Floria Ball: ");
-returnedLottery = lotteryNumbers(userChoice);
-//console.log("The number is " + returnedLottery);
+array = lotteryNumbers(userChoice);
+//console.log(array);
+
+
+if(userChoice === "1") {
+    console.log("The Quick Pick is " + array[0] + "," + array[1] + "," + array[2] + "," + array[3] + "," + array[4] + " Powerball: " + array[5]);
+}else if(userChoice === "2"){
+    console.log("The Florida Ball is " + array[0] + "," + array[1] + "," + array[2] + "," + array[3] + "," + array[4] + "," + array[5]);
+}
