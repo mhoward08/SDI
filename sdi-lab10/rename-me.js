@@ -8,13 +8,24 @@ Lab Ten: Problem - Solving
  */
 
 // global variable
-returnedLottery;
+var returnedLottery;
 
 // function
-function lotteryNumbers(lotteryType) {
+function lotteryNumbers() {
 
     // local variables
-    var powerBall = 
+    var powerBall;
+    var floridaBall;
+
+    // powerBall 1-59
+
+    powerBall = Math.floor((Math.random()* 59 + 1));
+    console.log(powerBall);
+
+    return powerBall;
+
+    // 
+
 
 }
 
@@ -22,3 +33,5 @@ function lotteryNumbers(lotteryType) {
 
 // main code
 
+returnedLottery = lotteryNumbers();
+console.log("The number is " + returnedLottery);
