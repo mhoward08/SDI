@@ -9,29 +9,50 @@ Lab Ten: Problem - Solving
 
 // global variable
 var returnedLottery;
+var userChoice;
 
 // function
-function lotteryNumbers() {
+function lotteryNumbers(lotteryType) {
 
     // local variables
     var powerBall;
-    var floridaBall;
+    //var randomNumbers;
+    //var floridaBall;
+    var a;
+    var b;
+
+    // if statement
+    if (lotteryType == 1) {
+
+        for(i = 0; i < 5; i++) {
+
+            powerBall = Math.floor((Math.random() * 59 + 1));
+            console.log("Powerball is " + powerBall);
+
+        }
+
+        powerBall = Math.floor((Math.random() * ))
+
+
+    } else if(lotteryType == 2) {
+        powerBall = Math.floor((Math.random() * 53 + 1));
+        console.log("Florida is " + powerBall);
+    }
 
     // powerBall 1-59
 
-    powerBall = Math.floor((Math.random()* 59 + 1));
-    console.log(powerBall);
 
+
+
+    // floridaBall
+
+    // return
     return powerBall;
-
-    // 
-
-
 }
 
 
 
 // main code
-
-returnedLottery = lotteryNumbers();
+userChoice = prompt("Type 1 for Powerball or 2 for FloriaBall: ");
+returnedLottery = lotteryNumbers(userChoice);
 console.log("The number is " + returnedLottery);
