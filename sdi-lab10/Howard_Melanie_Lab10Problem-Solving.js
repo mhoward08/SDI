@@ -19,8 +19,6 @@ function lotteryNumbers(lotteryType)
 
     // local variables
     var powerBall = [];
-    //var randomNumbers;
-    //var floridaBall;
     var finalNumber = [];
     var a;
     var b;
@@ -61,7 +59,8 @@ function lotteryNumbers(lotteryType)
         //console.log("Florida is " + powerBall);
         finalNumber[i] = powerBall[i];
     }
-    //console.log(finalNumber)
+
+
     // return
     return finalNumber;
 }
